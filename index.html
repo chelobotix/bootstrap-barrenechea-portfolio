@@ -18,27 +18,29 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div>
-        <nav>
+    <header class="container-fluid justify-content-center fixed-top">
+      <div class="mobile-nav">
+        <nav class="nav-item">
           <a href="index.html">
             <img src="images/Welcome.png" alt="logo" />
           </a>
         </nav>
-        <nav>
+        <nav class="nav-item">
           <img src="images/Union.png" alt="menu button" />
         </nav>
       </div>
-      <div>
-        <nav>
-          <a href="#Portoflio">Portoflio</a>
-        </nav>
-        <nav>
-          <a href="#About">About</a>
-        </nav>
-        <nav>
-          <a href="#Contact">Contact</a>
-        </nav>
+      <div id="top-bar" class="d-flex flex-row navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="nav nav-pills">
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#works">Portoflio</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#about-section">About</a>
+          </li>
+          <li class="nav-item m-2">
+            <a class="nav-link" href="#contact-section">Contact</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -93,9 +95,9 @@
     </section>
 
     <!-- Works Section -->
-
+    <div data-bs-spy="scroll" data-bs-target="#top-bar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <section>
-      <div>
+      <div id="works">
         <h2>My Recent Works</h2>
         <img src="images/Indicator.png" alt="divider" />
       </div>
@@ -244,150 +246,155 @@
             </div>
           </div>
         </article>
+      </div>
+    </section>
+
 
     <!-- About me Section -->
 
-    <div>
-      <section>
-        <article">
+
+      <div id="about-section">
+        <section>
+          <article">
+            <div>
+              <h2>About Me</h2>
+            </div>
+            <p>
+              I can help you build a product, feature or website. Look through some of my work and experience! If you like what you
+              see and have a project you need coded,<br />
+              don't hestiate to contact me.
+            </p>
+            <div>
+              <button type="button" href="#">Get My Resume</button>
+            </div>
+          </article>
+
+          <ul>
+            <li>
+              <div>
+                <div>
+                  <img src="images/Frame.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h3>Languages</h3>
+                <ul>
+                  <div>
+                    <li>Javascript</li>
+                  </div>
+                  <div>
+                    <li>Ruby</li>
+                  </div>
+                  <div>
+                    <li>Html</li>
+                  </div>
+                  <div>
+                    <li>CSS</li>
+                  </div>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div>
+                  <img src="images/Group.png" alt="" />
+                </div>
+              </div>
+              <div>
+                <h3>Frameworks</h3>
+                <ul>
+                  <div>
+                    <li>Bootstrap</li>
+                  </div>
+                  <div>
+                    <li>Ruby on rails</li>
+                  </div>
+                  <div>
+                    <li>RSpec</li>
+                  </div>
+                  <div>
+                    <li>Capybara</li>
+                  </div>
+                  <div>
+                    <li>Selenium</li>
+                  </div>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <div>
+                  <img src="images/skills.png" alt="skills" />
+                </div>
+              </div>
+              <div>
+                <h3>Skills</h3>
+                <ul>
+                  <div>
+                    <li>Codekit</li>
+                  </div>
+                  <div>
+                    <li>GitHub</li>
+                  </div>
+                  <div>
+                    <li>Codepen</li>
+                  </div>
+                  <div>
+                    <li>Gitlab</li>
+                  </div>
+                  <div>
+                    <li>Terminal</li>
+                  </div>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div id="contact-section">
+        <section>
           <div>
-            <h2>About Me</h2>
+            <h2>
+              I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h2>
           </div>
-          <p>
-            I can help you build a product, feature or website. Look through some of my work and experience! If you like what you
-            see and have a project you need coded,<br />
-            don't hestiate to contact me.
-          </p>
+
           <div>
-            <button type="button" href="#">Get My Resume</button>
+            <form action="https://formspree.io/f/xzbwnlee" method="post">
+              <div>
+                <fieldset>
+                  <input type="text" placeholder="Fullname" maxlength="30" required />
+                </fieldset>
+              </div>
+
+              <div>
+                <fieldset>
+                  <input type="email" placeholder="Email address" required />
+                </fieldset>
+              </div>
+
+              <div>
+                <fieldset>
+                  <textarea
+                    class="filter txtarea_dsk"
+                    name="comment"
+                    placeholder="Typing something"
+                    maxlength="500"
+                    required
+                  ></textarea>
+                </fieldset>
+              </div>
+
+              <div>
+                <button type="submit">Get in touch</button>
+              </div>
+            </form>
           </div>
-        </article>
-
-        <ul>
-          <li>
-            <div>
-              <div>
-                <img src="images/Frame.png" alt="" />
-              </div>
-            </div>
-            <div>
-              <h3>Languages</h3>
-              <ul>
-                <div>
-                  <li>Javascript</li>
-                </div>
-                <div>
-                  <li>Ruby</li>
-                </div>
-                <div>
-                  <li>Html</li>
-                </div>
-                <div>
-                  <li>CSS</li>
-                </div>
-              </ul>
-            </div>
-          </li>
-
-          <li>
-            <div>
-              <div>
-                <img src="images/Group.png" alt="" />
-              </div>
-            </div>
-            <div>
-              <h3>Frameworks</h3>
-              <ul>
-                <div>
-                  <li>Bootstrap</li>
-                </div>
-                <div>
-                  <li>Ruby on rails</li>
-                </div>
-                <div>
-                  <li>RSpec</li>
-                </div>
-                <div>
-                  <li>Capybara</li>
-                </div>
-                <div>
-                  <li>Selenium</li>
-                </div>
-              </ul>
-            </div>
-          </li>
-
-          <li>
-            <div>
-              <div>
-                <img src="images/skills.png" alt="skills" />
-              </div>
-            </div>
-            <div>
-              <h3>Skills</h3>
-              <ul>
-                <div>
-                  <li>Codekit</li>
-                </div>
-                <div>
-                  <li>GitHub</li>
-                </div>
-                <div>
-                  <li>Codepen</li>
-                </div>
-                <div>
-                  <li>Gitlab</li>
-                </div>
-                <div>
-                  <li>Terminal</li>
-                </div>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </div>
-
-    <div>
-      <section>
-        <div>
-          <h2>
-            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-          </h2>
-        </div>
-
-        <div>
-          <form action="https://formspree.io/f/xzbwnlee" method="post">
-            <div>
-              <fieldset>
-                <input type="text" placeholder="Fullname" maxlength="30" required />
-              </fieldset>
-            </div>
-
-            <div>
-              <fieldset>
-                <input type="email" placeholder="Email address" required />
-              </fieldset>
-            </div>
-
-            <div>
-              <fieldset>
-                <textarea
-                  class="filter txtarea_dsk"
-                  name="comment"
-                  placeholder="Typing something"
-                  maxlength="500"
-                  required
-                ></textarea>
-              </fieldset>
-            </div>
-
-            <div>
-              <button type="submit">Get in touch</button>
-            </div>
-          </form>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
     <div>
