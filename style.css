@@ -2,3 +2,55 @@
   padding: 0;
   margin: 0;
 }
+
+.arrow1 {
+  width: 50px;
+  height: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+  .p_heading_dsk {
+    display: none;
+  }
+
+  .dsk-nav {
+    display: none;
+    background-color: aqua;
+  }
+  .works-image {
+    background-color: #ebf0ee;
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .heading {
+    margin-top: 70px;
+  }
+
+  .p_heading_mob {
+    display: none;
+  }
+
+  .works-image {
+    background-color: #ebf0ee;
+    width: 100%;
+    height: 250px;
+  }
+
+  li {
+    list-style-type: none;
+    font-size: 12px;
+  }
+
+  h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
