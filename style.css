@@ -1,9 +1,28 @@
 * {
   padding: 0;
   margin: 0;
+  outline: 1px solid red;
+}
+
+.arrow1 {
+  width: 50px;
+  height: 5px;
 }
 
 @media only screen and (max-width: 767px) {
+  .p_heading_dsk {
+    display: none;
+  }
+
+  .dsk-nav {
+    display: none;
+    background-color: aqua;
+  }
+  .works-image {
+    background-color: #ebf0ee;
+    width: 100%;
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -11,15 +30,22 @@
     display: none;
   }
 
-  .works-image {
-    background-color: #EBF0EE;
-    width: 100%;
-    height: 200px;
+  .heading {
+    margin-top: 70px;
   }
-  
+
+  .p_heading_mob {
+    display: none;
+  }
+
+  .works-image {
+    background-color: #ebf0ee;
+    width: 100%;
+    height: 250px;
+  }
+
   li {
     list-style-type: none;
-    background-color: #EBF0EE;
     font-size: 12px;
   }
 
